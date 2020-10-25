@@ -36,8 +36,11 @@ Each step contains a readme with the explanation of the step and, if is change f
 1. [Generating Sources](03%20-%20Generating%20Sources)
     - [XSD To Java](03%20-%20Generating%20Sources#xsd-to-java)
     - [JSON To Java](03%20-%20Generating%20Sources#json-to-java)
+1. [Alternative Languages](04%20-%20Alternative%20Languages)
+    - [Groovy](04%20-%20Alternative%20Languages#groovy)
+    - [Kotlin](04%20-%20Alternative%20Languages#kotlin)
+    - [Scala](04%20-%20Alternative%20Languages#scala)
 
-1. [Alternative Languages]()
 1. [Testing]()
 1. [Multi-Module Projects]()
 1. [Spring Boot]()
