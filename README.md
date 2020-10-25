@@ -33,8 +33,10 @@ Each step contains a readme with the explanation of the step and, if is change f
     - [Site Plugin](02%20-%20Plugins#site-plugin)
     - [Other Plugins](02%20-%20Plugins#other-plugins)
     - [Common Commands](02%20-%20Plugins#common-commands)
+1. [Generating Sources](03%20-%20Generating%20Sources)
+    - [XSD To Java](03%20-%20Generating%20Sources#xsd-to-java)
+    - [JSON To Java](03%20-%20Generating%20Sources#json-to-java)
 
-1. [Generating Sources]()
 1. [Alternative Languages]()
 1. [Testing]()
 1. [Multi-Module Projects]()
