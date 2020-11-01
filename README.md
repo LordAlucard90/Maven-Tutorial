@@ -57,8 +57,12 @@ Each step contains a readme with the explanation of the step and, if is change f
     - [Flatten Plugin](06%20-%20Multi-Module%20Projects#flatten-plugin)
     - [Enforcer Plugin](06%20-%20Multi-Module%20Projects#enforcer-plugin)
     - [BOM](06%20-%20Multi-Module%20Projects#bom)
+1. [Spring Boot](07%20-%20Spring%20Boot)
+    - [Intro](07%20-%20Spring%20Boot#intro)
+    - [Fat Jar](07%20-%20Spring%20Boot#fat-jar)
+    - [Plugins](07%20-%20Spring%20Boot#plugins)
+    - [Multi-Module Project](07%20-%20Spring%20Boot#multi-module-project)
 
-1. [Spring Boot]()
 1. [Maven Repositories]()
 1. [Packagecloud]()
 1. [Nexus]()
