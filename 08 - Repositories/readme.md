@@ -7,6 +7,7 @@
 - [Manually Install Dependencies](#manually-install-dependencies)
 - [Repository Authentication](#repository-authentication)
 - [Nexus](#nexus)
+- [Build Profiles](#build-profiles)
 
 ---
 
@@ -218,4 +219,43 @@ While creating a new repository it is possible to set it as group, in this case 
 The repository in this way becomes a virtual repositories and it is possible to add only one repository configuration
 and manage all the dependencies and deploy process there.
 
+## Build Profiles
 
+Build profiles allow to specify sets o build configuration values, more than one profile can be active at the same time,
+but it is not possible to define the priority. They allow to change the build depending on the operative system 
+or to activate optional plugins and os on. 
+
+It is possible to define build profile:
+-  pom, `mvn package -S <settings_file>`
+- user, `~/.m2/settings.xml`
+- global, `<maven_home>/conf/settings,sml`
+
+An example of a profile for the nexus release is:
+```xml
+<profiles>
+    <profile>
+        <id>nexus-local</id>
+        <distributionManagement>
+            <snapshotRepository>
+                <id>nexus-snapshot</id>
+                <url>http://localhost:8081/repository/nexus-snapshot/</url>
+            </snapshotRepository>
+            <repository>
+                <id>nexus-release</id>
+                <url>http://localhost:8081/repository/nexus-release/</url>
+            </repository>
+        </distributionManagement>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+    </profile>
+</profiles>
+```
+From the command line it is possible to:
+- see the current active profiles: `mvn help:active-profiles`
+- activate a profile: `-P<profile>`
+- deactivate a profile: `-P \!<profile>`
+- deactivate a profile and activate another: `-P \!<profile>.<profile>`
+
+Profiles can be used to set environment variable when, for example test or integration tests, are run locally or
+in a remote machine.
