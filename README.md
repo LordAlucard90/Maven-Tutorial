@@ -76,5 +76,5 @@ Each step contains a readme with the explanation of the step and, if is change f
     - [Rollback](09%20-%20Release%20Plugin#rollback)
     - [DryRun](09%20-%20Release%20Plugin#dryrun)
 
-1. [Real World]()
-1. [Enterprise Dependency Management]()
+I do not have written any note on the last two sections (Contracts and BOMs) because there was too less practical stuff
+in the first case and it was already managed in teh second one.
