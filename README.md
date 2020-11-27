@@ -77,4 +77,4 @@ Each step contains a readme with the explanation of the step and, if is change f
     - [DryRun](09%20-%20Release%20Plugin#dryrun)
 
 I do not have written any note on the last two sections (Contracts and BOMs) because there was too less practical stuff
-in the first case and it was already managed in teh second one.
+in the first case and it was already managed in the second one.
